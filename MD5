@@ -1,4 +1,4 @@
-10ea045738d07a6b4b29ebd860c46b03 *DESCRIPTION
+399e80bc628bb95b816a10df6fe841f5 *DESCRIPTION
 5abce92773e8e11bfa634415320e0436 *NAMESPACE
 2bcda9d56298299e5a95a98376439f43 *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
@@ -6,7 +6,7 @@ cc908d4c46434ee1252299df966d3f05 *R/plugin.R
 79e51a6f73f9c9217ecd38c899d60066 *R/pqueue.R
 327eb7afb2ed62e81f391a9c24af83fe *R/rcpp_hello_world.R
 b740d3bb6f63dfe8f9ca66f8f80b6d03 *R/zzz.R
-85d637bda3356ea874787ddaa6be831e *configure.ac
+e9568fdad9960162d9565e4a665266bf *configure.ac
 5257dd566a3247ddf4239cb76ce45da2 *data/fhcrcData.rda
 dcc78f0ccfc9b65328cf6cc0b5038394 *inst/develop_to_master.sh
 ef411b045ab0e3d82728525d3df3c925 *inst/doc/html/a00002.html
@@ -814,7 +814,7 @@ f6ee151686a17bcda6415098a13612e6 *inst/include/RngStream.h
 d8fde3efe6bfdb4276f5c935fb750e8f *inst/include/microsimulation.h
 a306cfc20164512b816ead6a2f0b10f9 *inst/include/rcpp_table.h
 2d73129bd12aa7ca694b700a6a60a58a *inst/include/siena/ssim.h
-fa83f5d5c6c42e49d772672d04f2b10a *inst/include/siena/tprocess.h
+815758c39496cd024e80ebd6857aa915 *inst/include/siena/tprocess.h
 401c5f82bb3b79bad84df99c5495045f *inst/include/tprocessconf.h
 58a312062ab8d8afd6c7758b851d6520 *inst/include/tprocessconf.h.in
 b7d616fca67a37a6799e81e897b51e10 *inst/lib/keeplib.txt
