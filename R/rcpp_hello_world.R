@@ -404,22 +404,22 @@ ICER <- function(object1, object2, ...)
 #'
 #'   This event queue is simple and useful for pedagogic purposes.
 #' 
-#'   The algorithm for inserting values into the queue is computationally
+#'   The algorithm for pushing values into the queue is computationally
 #'   very simple: simply rank the times using \code{order()} and re-order
 #'   times and events. This approach is probably of acceptable performance
 #'   for smaller queue. A more computationally efficient approach for
-#'   insert into larger queues would be to use a binary search (e.g. using
+#'   pushing into larger queues would be to use a binary search (e.g. using
 #'   \code{findInterval()}).
 #' 
 #' For faster alternatives, see \code{pqueue} and \code{PQueueRef}.
 #'
 #' @examples
 #' pq = new("EventQueue")
-#' pq$insert(3,"Clear drains")
-#' pq$insert(4, "Feed cat")
-#' pq$insert(5, "Make tea")
-#' pq$insert(1, "Solve RC tasks")
-#' pq$insert(2, "Tax return")
+#' pq$push(3,"Clear drains")
+#' pq$push(4, "Feed cat")
+#' pq$push(5, "Make tea")
+#' pq$push(1, "Solve RC tasks")
+#' pq$push(2, "Tax return")
 #' while(!pq$empty())
 #'   print(pq$pop())
 #'
@@ -435,15 +435,15 @@ EventQueue <-
                     help = function() {
                         'Reference class implementation of an event queue. Fields for the event times and the events list.'
                     },
-                    insert = function(time,event) {
+                    push = function(time,event) {
                         'Method to insert the event at the given time'
                         insert.ord <- findInterval(time,times)
                         times <<- append(times,time,insert.ord)
-                        events <<- append(events,event,insert.ord)
+                        events <<- append(events,list(event),insert.ord)
                     },
                     pop = function() {
                         'Method to remove the head of the event queue and return its value'
-                        head <- structure(events[[1]], time=times[1])
+                        head <- list(event=events[[1]], time=times[1])
                         times <<- times[-1]
                         events <<- events[-1]
                         return(head)
@@ -457,13 +457,15 @@ EventQueue <-
                         times <<- numeric()
                         events <<- list()
                     },
-                    remove = function(predicate, ...) {
+                    cancel = function(predicate, ...) {
                         'Method to remove events that satisfy some predicate'
-                        i <- sapply(events, predicate, ...)
-                        stopifnot(is.logical(i))
-                        i[is.na(i)] <- TRUE
-                        times <<- times[!i]
-                        events <<- events[!i]
+                        if (!empty()) {
+                            i <- sapply(events, predicate, ...)
+                            stopifnot(is.logical(i))
+                            i[is.na(i)] <- TRUE
+                            times <<- times[!i]
+                            events <<- events[!i]
+                        }
                     }))
 
 #' Reference class implementation of a discrete event simulation
@@ -486,7 +488,7 @@ EventQueue <-
 #'                          scheduleAt(1, "Solve RC tasks")
 #'                          scheduleAt(2, "Tax return")
 #'                       },
-#'                       handleMessage=function(event) {print(event)}))
+#'                       handleMessage=function(event) print(event)))
 #'
 #' des = new("DES")
 #' des$run()
@@ -623,19 +625,19 @@ EventQueue <-
 #'             }
 #'             else if (event == "Metastatic cancer") {
 #'                 state <<- event
-#'                 remove(function(event) event %in%
+#'                 cancel(function(event) event %in%
 #'                        c("Clinical cancer diagnosis","Cancer death")) # competing events
 #'                 scheduleAt(now() + rweibull(1,2,5), "Cancer death")
 #'             }
 #'             else if (event == "Clinical cancer diagnosis") {
 #'                 state <<- event
-#'                 remove(function(event) event == "Metastatic cancer")
+#'                 cancel(function(event) event == "Metastatic cancer")
 #'             }
 #'             else if (event == "Screening") {
 #'                 switch(state,
 #'                        "Cancer onset" = {
 #'                            state <<- "Screen-detected cancer diagnosis"
-#'                            remove(function(event) event %in%
+#'                            cancel(function(event) event %in%
 #'                                   c("Clinical cancer diagnosis","Metastatic cancer"))
 #'                        },
 #'                        "Metastatic cancer" = {}, # ignore
@@ -692,7 +694,8 @@ EventQueue <-
 #' @rdname Classes
 BaseDiscreteEventSimulation <-
     setRefClass("BaseDiscreteEventSimulation",
-                contains = "PQueueRef",
+                contains = "EventQueue",
+                ## contains = "PQueueRef",
                 fields = list(currentTime = "numeric",
                     previousEventTime = "numeric"),
                 methods = list(
@@ -718,6 +721,7 @@ BaseDiscreteEventSimulation <-
                         NULL
                     },
                     now = function() currentTime,
+                    previous = function() previousEventTime,
                     reset = function(startTime = 0.0) {
                         'Method to reset the event queue'
                         clear()

@@ -12,7 +12,7 @@ case "${host_os}" in
 	AC_SUBST([TPROCESS_IMPL], [0])
         ;;
 
-     *) 
+     *)
 	;;
 esac
 
