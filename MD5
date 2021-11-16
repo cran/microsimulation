@@ -1,4 +1,4 @@
-2ebd870272d47e25d1f506633b69a7f6 *DESCRIPTION
+a5b4c89483cc9ed6cc44bf364421c8d6 *DESCRIPTION
 5abce92773e8e11bfa634415320e0436 *NAMESPACE
 2bcda9d56298299e5a95a98376439f43 *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
@@ -6,7 +6,6 @@ cc908d4c46434ee1252299df966d3f05 *R/plugin.R
 79e51a6f73f9c9217ecd38c899d60066 *R/pqueue.R
 9b20ff77b29f70b59b4e9a6a75a08648 *R/rcpp_hello_world.R
 b740d3bb6f63dfe8f9ca66f8f80b6d03 *R/zzz.R
-113b89e2a5e06e07a20866eb10f9ce69 *configure.ac
 5257dd566a3247ddf4239cb76ce45da2 *data/fhcrcData.rda
 dcc78f0ccfc9b65328cf6cc0b5038394 *inst/develop_to_master.sh
 ef411b045ab0e3d82728525d3df3c925 *inst/doc/html/a00002.html
@@ -817,11 +816,7 @@ d8a34c5fe2db3592bf54ecbcaa80b8ad *inst/include/microsimulation.cc
 bc88e65b8c12a13e71b38d8c95971c99 *inst/include/microsimulation.h
 a306cfc20164512b816ead6a2f0b10f9 *inst/include/rcpp_table.h
 2d73129bd12aa7ca694b700a6a60a58a *inst/include/siena/ssim.h
-815758c39496cd024e80ebd6857aa915 *inst/include/siena/tprocess.h
 5eb56125745aa8d7f94171c12c7c0f6e *inst/include/ssim.cc
-70a4d29324cfd97fd575483d54268832 *inst/include/tprocess.cc
-401c5f82bb3b79bad84df99c5495045f *inst/include/tprocessconf.h
-58a312062ab8d8afd6c7758b851d6520 *inst/include/tprocessconf.h.in
 b7d616fca67a37a6799e81e897b51e10 *inst/lib/keeplib.txt
 5bf959b44c392e8e50199cbf97699a28 *man/Classes.Rd
 fc045d759aa4922c305b0fbdf739e085 *man/Data.Rd
@@ -832,7 +827,7 @@ c2b916fcc36be4a2a7b699c19ce94b4e *man/RNGStream.Rd
 61e0e234585676b3af2315e896fc8fdc *man/Utilities.Rd
 8e037b7e9a37b67fdf281b91c484ef18 *man/discountedInterval.Rd
 37496bf4e8f53527612ae12a3ee5094d *man/microsimulation-package.Rd
-5fbabe8f117af1302c04258d273a8e24 *src/Makevars
+bad3260fc4de7b857834407abf8dba00 *src/Makevars
 e681f835145d45da13c6ad02228aedcd *src/Makevars.win
 ed52fdaa24695d35ed925d1571715018 *src/RngStream.cpp
 549dbaefd904e33a7b1aefb1ec316b39 *src/calibperson-r.cc
@@ -849,4 +844,3 @@ d78a90ca9ec6cabca7544958bb8f4914 *src/microsimulation.cc
 f9395613dc728c16e501752b3ad7eb5f *src/simple-example.cc
 b2ec9f5405052010932483fb8fc3df87 *src/simple-example2.cc
 5eb56125745aa8d7f94171c12c7c0f6e *src/ssim.cc
-70a4d29324cfd97fd575483d54268832 *src/tprocess.cc
