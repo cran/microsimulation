@@ -1,4 +1,4 @@
-a5b4c89483cc9ed6cc44bf364421c8d6 *DESCRIPTION
+b254c4b6db64d8b67ee5a2db28ca56a9 *DESCRIPTION
 5abce92773e8e11bfa634415320e0436 *NAMESPACE
 2bcda9d56298299e5a95a98376439f43 *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
@@ -837,7 +837,7 @@ cd8e4dfa2ebcc3fa3ba2f7e531b69e4b *src/doc/fdl.txt
 9ecd513abc9b04c225216acd4c926343 *src/doc/header.html
 73d93c5a9c4f99e5eab49d6b807890c2 *src/doc/maindoc.h
 b5b2ad37255aac8e8aff703f01f75935 *src/illness-death.cpp
-b7c3e7ddf5d696118e9497a40b7947bf *src/init.c
+aeedb4c648a19345cdf7de116f278fbe *src/init.c
 d78a90ca9ec6cabca7544958bb8f4914 *src/microsimulation.cc
 8a54422e1760ec86ba874168e91d1989 *src/person-r.cc
 4fec50fa9f9b68a24080a186b6f4c8cb *src/pqueue.cpp
