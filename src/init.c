@@ -9,11 +9,11 @@
 
 /* .C calls */
 extern void r_get_user_random_seed(void *);
-extern void r_next_rng_substream();
+extern void r_next_rng_substream(void);
 extern void r_rng_advance_substream(void *, void *);
 extern void r_set_user_random_seed(void *);
-extern void r_create_current_stream();
-extern void r_remove_current_stream();
+extern void r_create_current_stream(void);
+extern void r_remove_current_stream(void);
 
 /* .Call calls */
 extern SEXP callCalibrationSimulation(SEXP);
@@ -27,6 +27,7 @@ extern SEXP pqueue__empty(SEXP);
 extern SEXP pqueue__new(SEXP);
 extern SEXP pqueue__pop(SEXP);
 extern SEXP pqueue__push(SEXP, SEXP, SEXP);
+extern SEXP test_read_gsm(SEXP);
 
 static const R_CMethodDef CEntries[] = {
     {"r_get_user_random_seed",  (DL_FUNC) &r_get_user_random_seed,  1},
@@ -35,6 +36,7 @@ static const R_CMethodDef CEntries[] = {
     {"r_set_user_random_seed",  (DL_FUNC) &r_set_user_random_seed,  1},
     {"r_create_current_stream",   (DL_FUNC) &r_create_current_stream,   0},
     {"r_remove_current_stream",   (DL_FUNC) &r_remove_current_stream,   0},
+    {"test_read_gsm",      (DL_FUNC) &test_read_gsm,      1},
     {NULL, NULL, 0}
 };
 
