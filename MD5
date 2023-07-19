@@ -1,4 +1,4 @@
-3afead4ac66a044420ee3daaf8c2414f *DESCRIPTION
+289f3e62415ba80b1e76e97b76b1ef27 *DESCRIPTION
 adf8e932259cd4d3eda7def7a0735734 *NAMESPACE
 e87a94755b6bb11a39397bacaf513cea *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
@@ -10,7 +10,7 @@ b740d3bb6f63dfe8f9ca66f8f80b6d03 *R/zzz.R
 5257dd566a3247ddf4239cb76ce45da2 *data/fhcrcData.rda
 dcc78f0ccfc9b65328cf6cc0b5038394 *inst/develop_to_master.sh
 34d28c0690cdfd0628ee2e1d92be0b5e *inst/doc/examples.html
-ed2f2986ae7b1662eaa052335020c882 *inst/doc/examples.org
+8c25dd7a6dc701ae3e48604b5d5bbc13 *inst/doc/examples.org
 ebccaf1f8296b0dc3f2a7d9b5f2d795d *inst/doc/html/a00002.html
 5dedd40ea12113bb9d03c53ce524e81c *inst/doc/html/a00002_source.html
 65a5c6d3967d15851e1832869cfe8eaa *inst/doc/html/a00003.map
@@ -789,9 +789,9 @@ f6ee151686a17bcda6415098a13612e6 *inst/include/RngStream.h
 d2585aa0f7e987542c02f1a0d137dc7f *inst/include/c_optim.h
 d8bfd6fe0ae0c6e3e19c1fc12136f852 *inst/include/gsm.h
 8162103d05896ea0972439ca5eaadc76 *inst/include/heap.h
-bbfd7cd9b659124998e580d6763ffb84 *inst/include/microsimulation.h
+27bba2d82edac04a4ba9f5db0c7d600e *inst/include/microsimulation.h
 80a3cad1f7596a95fb81bc3496ecc89d *inst/include/rcpp_table.h
-60c18287b9274a8790cf48f2ffe66c3f *inst/include/siena/ssim.h
+8dd6b06d8a03edbf507d37ece7ca6f39 *inst/include/siena/ssim.h
 e931c2e51667923b146269055453a459 *inst/include/splines.h
 ef528b67fe802b3a8a42cc99ba590f5c *inst/include/ssim.cc
 b7d616fca67a37a6799e81e897b51e10 *inst/lib/keeplib.txt
@@ -814,7 +814,7 @@ cd8e4dfa2ebcc3fa3ba2f7e531b69e4b *src/doc/fdl.txt
 4dd8eb9c1e33296f01fcee727b96dd8d *src/doc/footer.html
 9ecd513abc9b04c225216acd4c926343 *src/doc/header.html
 4bd8259bc829a3839a699a81a2fc5bc6 *src/doc/maindoc.h
-20321da14d1f60c5317dbd7269377cf8 *src/gsm.cpp
+b353ec7cc9fe4526f14d06a86faf0f8f *src/gsm.cpp
 4878b1ca98e4aff2240320e3fa94d443 *src/illness-death.cpp
 55885ce84906de43d13024bef24dc608 *src/init.c
 221839a213c57ca2a892f4270c07f6d0 *src/microsimulation.cc
@@ -823,4 +823,4 @@ cd8e4dfa2ebcc3fa3ba2f7e531b69e4b *src/doc/fdl.txt
 220c8119415251f86c4f31e1d6127ae1 *src/simple-example.cc
 ddae2582f1bbcbd72cd4cfa77ccac582 *src/simple-example2.cc
 a30af4f444aa0fce3841a4c29d6628ee *src/splines.cpp
-ef528b67fe802b3a8a42cc99ba590f5c *src/ssim.cc
+88b65e92577b165c84ef95da980ed399 *src/ssim.cc
