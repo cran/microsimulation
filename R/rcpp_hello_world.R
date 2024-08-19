@@ -6,19 +6,18 @@
 #'
 #' Discrete event simulations in both R and C++ with Tools for Cost-Effectiveness Analysis.
 #'
-#' @docType package
 #' @name microsimulation-package
 #' @aliases microsimulation
 #' @author Mark Clements \email{mark.clements@ki.se}
 #' @references \url{https://github.com/mclements/microsimulation}
-#' @seealso \code{\link{Rcpp}}
+#' @seealso \code{\link[Rcpp]{sourceCpp}}
 #' @useDynLib microsimulation, .registration=TRUE
 #' @import Rcpp
 #' @import methods
 #' @importFrom graphics lines plot
 #' @importFrom stats predict rnorm sd
 #' @importFrom ascii ascii
-NULL
+"_PACKAGE"
 
 
 #' Cat a string for the library archive for use in loading the package
@@ -748,12 +747,12 @@ BaseDiscreteEventSimulation <-
 #' \describe{
 #' \item{resetRNGkind}{function to reset to the previous RNG and seed}
 #' \item{seed}{function to return the current seed}
-#' item{open}{function to use the current seed}
-#' item{close}{function to make the current seed equal to .Random.seed}
-#' item{resetStream}{function to move back to start of stream}
-#' item{resetSubStream}{function to move back to start of sub-stream}
-#' item{nextSubStream}{function to move to next sub-stream}
-#' item{nextStream}{function to move to next stream}
+#' \item{open}{function to use the current seed}
+#' \item{close}{function to make the current seed equal to .Random.seed}
+#' \item{resetStream}{function to move back to start of stream}
+#' \item{resetSubStream}{function to move back to start of sub-stream}
+#' \item{nextSubStream}{function to move to next sub-stream}
+#' \item{nextStream}{function to move to next stream}
 #' }
 #' @examples
 #' ## set up one stream

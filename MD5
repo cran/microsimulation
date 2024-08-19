@@ -1,10 +1,10 @@
-289f3e62415ba80b1e76e97b76b1ef27 *DESCRIPTION
+84f20ffcab81acb2c4cf965e5c80f58b *DESCRIPTION
 adf8e932259cd4d3eda7def7a0735734 *NAMESPACE
 e87a94755b6bb11a39397bacaf513cea *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
 cc908d4c46434ee1252299df966d3f05 *R/plugin.R
 79e51a6f73f9c9217ecd38c899d60066 *R/pqueue.R
-9b20ff77b29f70b59b4e9a6a75a08648 *R/rcpp_hello_world.R
+3eb269ef8a37f1d7ce07f41af0aec9f7 *R/rcpp_hello_world.R
 e17fe12c724a86dfbc8fa50bcb7dbb13 *R/simulate.R
 b740d3bb6f63dfe8f9ca66f8f80b6d03 *R/zzz.R
 5257dd566a3247ddf4239cb76ce45da2 *data/fhcrcData.rda
@@ -787,9 +787,9 @@ bc22a8ce8d130664de59e97afe6de37e *inst/doc/tick_tock.png
 ed52fdaa24695d35ed925d1571715018 *inst/include/RngStream.cpp
 f6ee151686a17bcda6415098a13612e6 *inst/include/RngStream.h
 d2585aa0f7e987542c02f1a0d137dc7f *inst/include/c_optim.h
-d8bfd6fe0ae0c6e3e19c1fc12136f852 *inst/include/gsm.h
+16692ec11680f9614657e5b779f04e8b *inst/include/gsm.h
 8162103d05896ea0972439ca5eaadc76 *inst/include/heap.h
-27bba2d82edac04a4ba9f5db0c7d600e *inst/include/microsimulation.h
+082b20a9fa07229983e93cf85ddee9dc *inst/include/microsimulation.h
 80a3cad1f7596a95fb81bc3496ecc89d *inst/include/rcpp_table.h
 8dd6b06d8a03edbf507d37ece7ca6f39 *inst/include/siena/ssim.h
 e931c2e51667923b146269055453a459 *inst/include/splines.h
@@ -799,11 +799,11 @@ b7d616fca67a37a6799e81e897b51e10 *inst/lib/keeplib.txt
 fc045d759aa4922c305b0fbdf739e085 *man/Data.Rd
 fc331f961aa2e88845694b20a1002fbf *man/Examples.Rd
 f5e354978b1fd43d2fc72fb796552b27 *man/Internal.Rd
-c2b916fcc36be4a2a7b699c19ce94b4e *man/RNGStream.Rd
+870fed8dac88075f3ff5642ca43971a4 *man/RNGStream.Rd
 04d38648ee5402d0b25f88bcf3bfd74d *man/SummaryReport.Rd
 61e0e234585676b3af2315e896fc8fdc *man/Utilities.Rd
 8e037b7e9a37b67fdf281b91c484ef18 *man/discountedInterval.Rd
-37496bf4e8f53527612ae12a3ee5094d *man/microsimulation-package.Rd
+66513134e556b0683227dfba13c8c413 *man/microsimulation-package.Rd
 07c8329730a099c73dacf3868b5fa568 *man/simulate.Rd
 abe1cae5c6acff7730c23eb6df2a44ce *src/Makevars
 2117b227c1ec39da8dc4c9ebbcab76ee *src/Makevars.win
@@ -814,7 +814,7 @@ cd8e4dfa2ebcc3fa3ba2f7e531b69e4b *src/doc/fdl.txt
 4dd8eb9c1e33296f01fcee727b96dd8d *src/doc/footer.html
 9ecd513abc9b04c225216acd4c926343 *src/doc/header.html
 4bd8259bc829a3839a699a81a2fc5bc6 *src/doc/maindoc.h
-b353ec7cc9fe4526f14d06a86faf0f8f *src/gsm.cpp
+c5533e054a769ebbc07355002c752f51 *src/gsm.cpp
 4878b1ca98e4aff2240320e3fa94d443 *src/illness-death.cpp
 55885ce84906de43d13024bef24dc608 *src/init.c
 221839a213c57ca2a892f4270c07f6d0 *src/microsimulation.cc
