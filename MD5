@@ -1,4 +1,4 @@
-84f20ffcab81acb2c4cf965e5c80f58b *DESCRIPTION
+5162156cca3349980fd522e0998760f1 *DESCRIPTION
 adf8e932259cd4d3eda7def7a0735734 *NAMESPACE
 e87a94755b6bb11a39397bacaf513cea *R/SummaryReport.R
 732654f196d86b88b3bd6b59fde283b1 *R/calibSim.R
@@ -789,7 +789,7 @@ f6ee151686a17bcda6415098a13612e6 *inst/include/RngStream.h
 d2585aa0f7e987542c02f1a0d137dc7f *inst/include/c_optim.h
 16692ec11680f9614657e5b779f04e8b *inst/include/gsm.h
 8162103d05896ea0972439ca5eaadc76 *inst/include/heap.h
-082b20a9fa07229983e93cf85ddee9dc *inst/include/microsimulation.h
+19f74e0a593c553042f06d74eb76ec27 *inst/include/microsimulation.h
 80a3cad1f7596a95fb81bc3496ecc89d *inst/include/rcpp_table.h
 8dd6b06d8a03edbf507d37ece7ca6f39 *inst/include/siena/ssim.h
 e931c2e51667923b146269055453a459 *inst/include/splines.h
@@ -819,7 +819,7 @@ c5533e054a769ebbc07355002c752f51 *src/gsm.cpp
 55885ce84906de43d13024bef24dc608 *src/init.c
 221839a213c57ca2a892f4270c07f6d0 *src/microsimulation.cc
 8a54422e1760ec86ba874168e91d1989 *src/person-r.cc
-4fec50fa9f9b68a24080a186b6f4c8cb *src/pqueue.cpp
+cb1bb98d5fa83ae5ddb7dbd90ff27352 *src/pqueue.cpp
 220c8119415251f86c4f31e1d6127ae1 *src/simple-example.cc
 ddae2582f1bbcbd72cd4cfa77ccac582 *src/simple-example2.cc
 a30af4f444aa0fce3841a4c29d6628ee *src/splines.cpp
